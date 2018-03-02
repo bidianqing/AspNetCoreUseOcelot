@@ -1,0 +1,53 @@
+﻿{
+  "ReRoutes": [
+    {
+      "UpstreamPathTemplate": "/news",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 57724
+        }
+      ],
+      "DownstreamPathTemplate": "/api/values",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddHeadersToRequest": {},
+      "AddClaimsToRequest": {},
+      "RouteClaimsRequirement": {},
+      "AddQueriesToRequest": {},
+      "RequestIdKey": "",
+      "FileCacheOptions": {
+        "TtlSeconds": 0,
+        "Region": ""
+      },
+      "ReRouteIsCaseSensitive": false,
+      "ServiceName": "",
+      "DownstreamScheme": "http",
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 0,
+        "DurationOfBreak": 0,
+        "TimeoutValue": 0
+      },
+      "LoadBalancer": "",
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "",
+        "PeriodTimespan": 0,
+        "Limit": 0
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "",
+        "AllowedScopes": []
+      },
+      "HttpHandlerOptions": {
+        "AllowAutoRedirect": false,
+        "UseCookieContainer": false,
+        "UseTracing": false
+      },
+      "UseServiceDiscovery": false
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:57709"
+  }
+}  
